@@ -1,0 +1,17 @@
+mixin table-row (title, class1, class2, class3)
+	tr
+		td= title
+		td: i(class="icon #{style}")
+		td: i(class="icon #{style}")
+		td: i(class="icon #{style}")
+
+//- -----------------------------------
+
+mixin table-row-text (title, text1, text2, text3)
+	tr
+		td= title
+		td= text1
+		td= text2
+		td= text3
+		
+//- -----------------------------------

@@ -1,0 +1,543 @@
+doctype html
+html
+	include ./includes/head.jade
+
+	body
+		header.header: .header--container.clearfix
+			a(href="#").header--logo.left: img(src="img/header--logo.png").header--logo-img
+
+			nav.header--nav.left: ul.header--list.clearfix
+				li.header--nav-item: a(href="#").header--nav-link О центре
+				li.header--nav-item: a(href="#").header--nav-link Курсы ЕГЭ
+				li.header--nav-item: a(href="#").header--nav-link Курсы ОГЭ
+				li.header--nav-item.active: a(href="#").header--nav-link Экстернат
+				li.header--nav-item: a(href="#").header--nav-link Доп. услуги
+				li.header--nav-item: a(href="#").header--nav-link Блог
+				li.header--nav-item: a(href="#").header--nav-link Контакты
+
+			.header--contacts.right
+				.header--phone 8 (812) 648-00-66
+				a(href="#map").header--address.fancybox-p Сапёрный переулок, дом 5
+
+		.main-slider: .main-slider--in
+			.slide.main-slider--item(style="background-image: url(img/main-slider--item-bg.png)"): .container
+				.main-slider--item-title Взрывная скидка<br />на курсы подготовки к ЕГЭ 2017
+				.main-slider--item-text Хочешь поступить на бесплатное? Готовься к ЕГЭ заранее.<br />Для самых ответственных мы подготовили скидку.
+
+				a(href="#call").fancybox-p.btn-red.block Забронировать скидку
+				
+				.main-slider--item-text2 Мы перезвоним и забронируем место.<br />Оплату можно внести в течение недели.<br />Торопитесь – цена растет каждый день
+
+				.main-slider--counters
+					.main-slider--counter.c1 15 октября
+						span 5800 ₽
+
+					.main-slider--counter.c2 15 августа
+						span 3200 ₽
+
+					.main-slider--counter.c3 Цена сегодня
+						span 1750 ₽
+						label 1 месяц подготовки / 1 предмет
+
+					.main-slider--counter.c4 15 июля
+						span 990 ₽
+
+			.slide.main-slider--item(style="background-image: url(img/main-slider--item-bg.png)"): .container
+				.main-slider--item-title Взрывная скидка<br />на курсы подготовки к ЕГЭ 2017
+				.main-slider--item-text Хочешь поступить на бесплатное? Готовься к ЕГЭ заранее.<br />Для самых ответственных мы подготовили скидку.
+
+				a(href="#call").fancybox-p.btn-red.block Забронировать скидку
+				
+				.main-slider--item-text2 Мы перезвоним и забронируем место.<br />Оплату можно внести в течение недели.<br />Торопитесь – цена растет каждый день
+
+		.main-line: .container.clearfix
+			.main-line--b1.left
+				.main-line--b1-title Зачем мы создали<br />курсы подготовки к ЕГЭ?
+				.main-line--b1-text
+					p Подготовить вас на высокий балл по ЕГЭ – не основная задача школы. Школьные педагоги не виноваты, они подчиняются школьной программе, федеральным законам и не могут уделять время персонально вашему ребенку.
+
+					p Первая альтернатива школьной подготовке — репетитор. Это лучше, чем подготовка в школе, но вы зависите от опыта одного человека, который может отлично знать предмет, но не подготовит вас к ЕГЭ.  Действительно эффективные репетиторы стоят в 2-3 раза дороже, чем образовательный центр. Занимаясь у начинающего репетитора вы рискуете провалить экзамен. Репетитор — это лотерея.
+
+			.main-line--b2.left
+				.main-line--b2-video: iframe(width="390" height="219" src="https://www.youtube.com/embed/LZAww9SanSw" frameborder="0" allowfullscreen)
+
+				.main-line--b2-text Директор центра Федор Глазов рассказывает о разнице подходов к образованию: школа, репетитор и центр
+
+			.main-line--b3.left
+				span: label Центр «Пять с плюсом» создан специально для подготовки
+				span: label к экзамену на ваш максимальный балл
+
+			.main-line--b4.left: .main-line--b4-text 32 педагога, по несколько человек на каждый предмет. Наши педагоги принимали участие в создании ЕГЭ.
+
+			.main-line--b5.left: .main-line--b5-text Варианты ЕГЭ из закрытой базы ФИПИ, которые обновляются каждый год. Подготовка по этим вариантам дает реальную картину успеваемости.
+
+			.main-line--b6.left: .main-line--b6-text Группы по 5-10 учеников, с одинаковым уровнем: соревновательный эффект и разбор ошибок всех учеников группы.
+
+			.main-line--b7.left: .main-line--b7-text Возможность быстро поменять преподавателя и предмет, если вы решили поступать на другую специальность.
+
+			.main-line--b8.left: .main-line--b8-text Собственная образовательная программа, на основе опыта подготовки сотен детей на балл 80+.
+
+			.main-line--b9.left: .main-line--b9-text Самый лучший способ понять, насколько готов ваш ребёнок к сдаче ЕГЭ, пройти
+
+			.main-line--b10.left
+				.main-line--b10-avatar
+
+				.main-line--b10-box.clearfix
+					.main-line--b10-item.left
+						.main-line--b10-label 56
+						.main-line--b10-text Средний балл по русскому в России
+
+					.main-line--b10-item.left
+						.main-line--b10-label 85
+						.main-line--b10-text Средний балл учеников центра по&nbsp;русскому
+
+					.main-line--b10-item.left
+						.main-line--b10-label 1,5%
+						.main-line--b10-text Учеников сдают ЕГЭ на 100 баллов
+
+					.main-line--b10-item.left
+						.main-line--b10-label 78%
+						.main-line--b10-text Учеников центра поступили на бюджет
+
+		.main-choose: .container
+			.main-choose--title Выбирайте свою программу подготовки
+
+			.main-choose--tabs
+				.main-choose--tabs-items
+					a(href="#" data-id="b1").main-choose--tabs-item.active
+						span.main-choose--tabs-item-title Подготовка к ЕГЭ
+						span.main-choose--tabs-item-text Вечером, от 1 дня в неделю<br />5 800 ₽ в месяц
+
+					a(href="#" data-id="b2").main-choose--tabs-item
+						span.main-choose--tabs-item-title Подготовка к ОГЭ
+						span.main-choose--tabs-item-text Вечером, от 1 дня в неделю<br />5 500 ₽ в месяц
+
+					a(href="#" data-id="b3").main-choose--tabs-item
+						span.main-choose--tabs-item-title Экстернат
+						span.main-choose--tabs-item-text Вечером, от 1 дня в неделю<br />35 000 ₽ в месяц
+
+				.main-choose--tabs-boxes
+					.main-choose--tabs-box.b1.shown(data-id="b1"): .clearfix
+						.main-choose--left.left
+							h2.m1 Предметы:
+
+							p.m1 Русский язык, математика, физика, обществознание, химия, физика, биология, литература, информатика,&nbsp;история.
+
+							h2.m1 Что входит в цену:
+
+							ul.m1
+								li 4 занятия в месяц по 120 минут
+								li Вступительный тест (собеседование)
+								li Персональная программа для ученика
+								li Информирование родителей об успеваемости и прогулах
+								li Два пробных ЕГЭ на настоящих бланках
+								li Стратегия: в каком порядке решать задания, сколько времени уделять.
+								li Тактика: как правильно заполнять бланк, как вносить исправления.
+
+							.clearfix
+								.main-choose--sub.left
+									h2.m1 Длительность курса
+
+									p.m1 Полный курс — с сентября по май. За этот срок мы подготовим к ЕГЭ ученика с любым уровнем знаний.
+
+									p Если вы не успели записаться в сентябре, вы можете присоединится позже. Мы проведем начальное тестирование и поймем (поймем на какой балл мы сможем вас подготовить - типа, начал в сентябре - на 80, а в январе - на 60) сможем ли вас подготовить за оставшийся срок.
+
+								.main-choose--sub.right
+									h2.m1 Расписание
+
+									p.m1 Занятия по одному предмету проходят один раз в неделю. Например, если вы выбрали три предмета, то у вас будет три занятия в неделю. Длительность 1 занятия — 120 минут (3 академических часа + перерыв по желанию учеников).
+
+									p С понедельника по субботу занятия начинаются в период  16:00 - 19:00.<br />В воскресенья занятия идут с 10:00 до 20:00
+
+						.main-choose--right.right
+							.main-choose--price
+								span 5 800 ₽
+								| в месяц
+
+							a(href="#" data-select-id="2").btn-green.scrollAndSelect Записаться
+							a(href="#").btn-outline Подробнее
+
+					.main-choose--tabs-box.b2(data-id="b2"): .clearfix
+						.main-choose--left.left
+							h2.m1 Предметы:
+
+							p.m1 русский язык, математика, физика, обществознание, химия, физика, биология, литература, информатика,&nbsp;история.
+
+							h2.m1 Что входит в цену:
+
+							ul.m1
+								li 4 занятия в месяц по 120 минут
+								li Вступительный тест (собеседование)
+								li Персональная программа для ученика
+								li Информирование родителей об успеваемости и прогулах
+								li Два пробных ЕГЭ на настоящих бланках
+								li Стратегия: в каком порядке решать задания, сколько времени уделять.
+								li Тактика: как правильно заполнять бланк, как вносить исправления.
+
+							.clearfix
+								.main-choose--sub.left
+									h2.m1 Длительность курса
+
+									p Полный курс — с сентября по май. За этот срок мы подготовим к ЕГЭ ученика с любым уровнем знаний.<br />Если вы не успели записаться в сентябре, вы можете присоединится позже. Мы проведем начальное тестирование и поймем (поймем на какой балл мы сможем вас подготовить - типа, начал в сентябре - на 80, а в январе - на 60) сможем ли вас подготовить за оставшийся срок.
+
+								.main-choose--sub.right
+									h2.m1 Расписание
+
+									p.m1 Занятия по одному предмету проходят один раз в неделю. Например, если вы выбрали три предмета, то у вас будет три занятия в неделю. Длительность 1 занятия — 120 минут (3 академических часа + перерыв по желанию учеников).
+
+									p С понедельника по субботу занятия начинаются в период  16:00 - 19:00.<br />В воскресенья занятия идут с 10:00 до 20:00
+
+						.main-choose--right.right
+							.main-choose--price
+								span 5 500 ₽
+								| в месяц
+
+							a(href="#" data-select-id="3").btn-green.scrollAndSelect Записаться
+							a(href="#").btn-outline Подробнее
+
+					.main-choose--tabs-box.b3(data-id="b3"): .clearfix
+						.main-choose--left.left
+							p.m1 Мы открыли Экстернат, чтобы помочь школьникам получить высокие баллы ЕГЭ и аттестат с хорошими оценками в комфортном режиме. Вместо школы, вы ходите в наш Центр, эксперты ежедневно готовят вас к ЕГЭ и преподают школьную программу в сжатом формате
+
+							h2.m1 Возраст учеников
+
+							p.m2 Мы принимаем учеников с 5 по 11 класс.<br />Для младших классов – прививаем навыки самостоятельного обучения, даем максимум практических знаний по предметам школьной программы, проводим профориентационные курсы.<br />В 9 классе мы делаем акцент на подготовке к ОГЭ, в 10-11 — к ЕГЭ и обучению на 1-ом курсе в ВУЗе.
+
+							h2.m1 Какие проблемы решает:
+
+							ul.m1
+								li У ребенка нет интереса к учебе
+								li Ребенок «плохо» учиться (плохие оценки), не успевает, не понимает
+								li Плохое отношение со стороны преподавателей
+								li Нет хороших педагогов по большинству предметов
+								li Хорошее отношение со стороны преподавателей только к отличникам, на остальных все равно
+								li Текучка преподавательского состава, по одному и тому же предмету преподаватели меняются очень&nbsp;часто
+								li Ребенок учиться хорошо, но «перегружен», делает уроки все свободное время
+								li Родителю очень трудно объективно оценить качество обучения ребенка
+
+							.clearfix
+								.main-choose--sub.left
+									h2.m1 Как это работает
+
+									p.m3 Вы учитесь в центре 5 дней в неделю по специальной программе. Занятия начинаются с 10:00. Выходные свободны для занятий спортом или хобби.
+
+									h3.m1 Наш центр:
+
+									ul
+										li проводит подготовку по всем предметам, по которым проводятся гос. аттестации,
+										li проводит углубленную подготовку к ЕГЭ/ОГЭ,
+										li организует дополнительные образовательные и мотивационные программы.
+
+								.main-choose--sub.right
+									h3.m2 Школа-партнер:
+
+									ul.m2
+										li зачисляет ученика находящегося на семейном обучении, для прохождения аттестации,
+										li принимает аттестации и выдает аттестат о среднем полном образовании,
+										li выдает направление для участия в ЕГЭ/ОГЭ.
+
+									h2.m1 Расписание
+
+									p Пять дней в неделю, занятия начинаются с 10:00, от одного до трёх двухчасовых занятий в день.
+
+						.main-choose--right.right
+							.main-choose--price
+								span 35 000 ₽
+								| в месяц
+
+							a(href="#" data-select-id="4").btn-green.scrollAndSelect Записаться
+							a(href="#").btn-outline Подробнее
+
+							.main-choose--quote Хорошая новость для отличников: можно закончить 10-11 класс за 1 год
+
+		.main-features: .container
+			.main-features--title Наши приемущества
+
+			.main-features--grid.clearfix
+				.main-features--item.left: .main-features--item-in
+					.main-features--item-title Уделяем внимание каждому
+					.main-features--item-text Подбираем группы по уровню учеников, для комфортного обучения. Группы не больше 10&nbsp;человек.
+
+				.main-features--item.left: .main-features--item-in
+					.main-features--item-title Отбираем лучших педагогов
+					.main-features--item-text Наши преподаватели входят в комиссию по составлению ЕГЭ/ОГЭ и являются 
+						a(href="#") экспертами ЕГЭ
+
+				.main-features--item.left: .main-features--item-in
+					.main-features--item-title Дважды<br />тестируем
+					.main-features--item-text Проводим тесты ЕГЭ в боевых условиях: на настоящих бланках ЕГЭ, по самым сложным и свежим вариантам экзамена.
+
+				.main-features--item.left: .main-features--item-in
+					.main-features--item-title Даем<br />гарантии
+					.main-features--item-text Если вам не понравилось первое занятие - вернём все деньги назад.
+
+				.main-features--item.left: .main-features--item-in
+					.main-features--item-title Информируем родителей
+					.main-features--item-text С учеником работает куратор, который следит за посещаемостью, успехами и держит родителей в курсе.
+
+				.main-features--item.left: .main-features--item-in
+					.main-features--item-title Накормим<br />горячей едой
+					.main-features--item-text Вчера у нас были макароны. 1 блюдо от 70 ₽. Комплексный обед - 250 ₽. 
+						a(href="#") Посмотрите меню
+
+		.main-reviews: .container
+			.main-reviews--title Отзывы
+			.main-reviews--text Смотрите все отзывы в 
+				a(href="#") группе Вконтакте
+
+			.main-reviews--grid.clearfix
+				.main-reviews--column.left
+					.main-reviews--item
+						.main-reviews--item-head
+							.main-reviews--item-avatar: img(src="img/main-reviews--item-avatar-i1.png")
+							.main-reviews--item-title Liza Sidorova
+							.main-reviews--item-university СПБГУ
+
+							.main-reviews--item-tags
+								.main-reviews--item-tag Русский
+									span 86
+								
+								.main-reviews--item-tag Математика
+									span 88
+
+								.main-reviews--item-tag Обществознание
+									span 90
+
+						.main-reviews--item-cont Ходила в ЕГЭ-центр на русский, математику и обществознание. Хочу поблагодарить Марину Николаевну, Марину Витальевну и Екатерину Анатольевну за приобретенные знания и за нестандартный подход к процессу обучения: никакой зубрёжки, материал усваивался легко. От занятий я получала невероятное удовольствие! В итоге улучшила успеваемость в школе, хорошо сдала ЕГЭ и поступила в Высшую школу экономики. Ребята, которые решили заниматься в этом ЕГЭ-центре, однозначно сделали правильный выбор. Однако очень важно заниматься самостоятельно-не класть конспект на полку до следующего занятия, а закреплять материал и, разумеется, выполнять все домашние задания.<br /><br />
+							a(href="http://vk.com/lizmoonchild") http://vk.com/lizmoonchild
+
+					.main-reviews--item
+						.main-reviews--item-head
+							.main-reviews--item-avatar: img(src="img/main-reviews--item-avatar-i2.png")
+							.main-reviews--item-title Антон Проценко
+							.main-reviews--item-university СПБГУ
+
+							.main-reviews--item-tags
+								.main-reviews--item-tag Русский
+									span 86
+								
+								.main-reviews--item-tag Математика
+									span 95
+
+								.main-reviews--item-tag Обществознание
+									span 90
+
+								.main-reviews--item-tag Английский
+									span 90
+
+						.main-reviews--item-cont Ходил в ЕГЭ-центр на все - русский, математику, английский, обществознание. Усилиями Марины Николаевны получил 87 по русскому (было немного стыдно перед ней, конечно, но я доволен), по математике за два года подготовки набрал 78, 90 по обществознанию - благодаря великолепным и детальным лекциям Екатерины Анатольевны. И 97 по английскому, приятный бонус.<br />Если вы все еще думаете, идти сюда заниматься или нет, то выбор очевиден, ребята :)<br /><br />
+							a(href="http://vk.com/tony_prots") http://vk.com/tony_prots
+
+				.main-reviews--column.left
+					.main-reviews--item
+						.main-reviews--item-head
+							.main-reviews--item-avatar: img(src="img/main-reviews--item-avatar-i3.png")
+							.main-reviews--item-title Артур Малышев
+							.main-reviews--item-university СПБГУ
+
+							.main-reviews--item-tags
+								.main-reviews--item-tag История
+									span 86
+
+								.main-reviews--item-tag Обществознание
+									span 100
+
+						.main-reviews--item-cont Я занимался в центре 5+ меньше года. Мои предметы: история и обществознание. Наиболее сложным предметом для меня была история, подробно изучать которую я начал лишь в 11 классе. Дмитрий Игоревич буквально "влюбил" меня в историю родной страны, научил смотреть на исторический процесс с разных сторон, посоветовал много литературы, которая пригодится мне в будущем. Историю я сдал на 82 балла. Особенно порадовало то, что в начале каждого занятия мы писали тест по предыдущей теме в формате ЕГЭ (это касается как истории, так и обществознания) По поводу обществознания! Огромное спасибо говорю Елене Владиславовне. Этот преподаватель поддерживал и помогал, к нему всегда можно было подойти с любым вопросом, а на занятиях, как уже писала моя одногруппница Настя Маврина, царила действительно уютная и позитивная атмосфера. Мой балл по обществознанию: 82. Часто ловил себя на мысли, что, была бы моя воля, в 11 классе посещал бы только центр 5+, так как он действительно готовит к ЕГЭ, позволяет добиваться тех целей, которые ты перед собой ставишь.<br />Огромное спасибо всем, кто работает в замечательном центре, кто дает уверенность в своих знаниях, кто переживает за своих подопечных! Обязательно буду советовать Вас своим друзьям и знакомым!<br /><br />
+							a(href="http://vk.com/arturmalyshev") http://vk.com/arturmalyshev
+
+					.main-reviews--item
+						.main-reviews--item-head
+							.main-reviews--item-avatar: img(src="img/main-reviews--item-avatar-i4.png")
+							.main-reviews--item-title Vaneahh Krylovsky
+							.main-reviews--item-university СПБГУ
+
+							.main-reviews--item-tags
+								.main-reviews--item-tag Русский
+									span 76
+								
+								.main-reviews--item-tag Математика
+									span 86
+
+						.main-reviews--item-cont Ходил на курсы по математике и русскому языку, которые мне очень понравились! Занятия для меня были интересными и толковыми! Я занимался русским языком у Елизаветы Владимировны и математикой у Марины Витальевны, по русскому набрал 87 баллов (и то, допустил две глупые ошибки в тесте, по невнимательности), а по математике - 84. Набранных баллов хватило, чтобы поступить на все направления, куда я хотел, в первую волну (одно из направлений было СПБГУ матмех). По окончанию обучения на данных курсах, я пришел к выводу, что в центре 5+ действительно могут вас подготовить, чтобы вы поступили туда, куда хотите! (Но при условии выполнения домашнего задания)<br /><br />
+							a(href="http://vk.com/abcdcba1") http://vk.com/abcdcba1
+		
+		.main-form: .container
+			.main-form--title Приходите на бесплатный тест ваших знаний!
+
+			.main-form--in.clearfix
+				form(action="" method="POST").ajax-form.main-form--box.hidden-select.left
+					.main-form--process
+						.main-form--field.clearfix.hidden
+							label.main-form--field-label Услуга
+							select(name="service").main-form--field-input
+								option Бесплатное тестирование
+								option Подготовка к ЕГЭ
+								option Подготовка к ОГЭ
+								option Экстернат
+
+						.main-form--field.clearfix
+							label.main-form--field-label Ваше имя
+							input(type="text" name="fullName").main-form--field-input.i1
+
+						.main-form--field.clearfix
+							label.main-form--field-label Телефон
+							input(type="text" name="phoneNumber" placeholder="+7 (999) 999-99-99").main-form--field-input.phoneMask.i2
+
+						.main-form--field.clearfix
+							label.main-form--field-label Сообщение
+							textarea(name="message").main-form--field-input
+
+						input(type="hidden" name="specialField_1" value="0")
+						input(type="hidden" name="specialField_2" value="1")
+
+						button(type="submit").main-form--submit Записаться
+
+					.main-form--success Спасибо!<br />Мы свяжемся с вами в&nbsp;течение 30 минут.
+
+				.main-form--info.right
+					.main-form--info-field Тест покажет текущий уровень подготовки. Мы спрогноизуруем на сколько баллов вы сможете сдать ЕГЭ и посоветуем как готовиться, чтобы улучшить результат.
+						i.icon-check
+
+					.main-form--info-field Тест бесплатен, занимает 1 час, результат вы&nbsp;получите через 20 минут.
+						i.icon-clock
+
+					.main-form--info-field Тесты начнутся с 15 августа
+						i.icon-calendar
+
+					.main-form--info-address Приезжайте в наш центр:<br />
+						a(href="#map").fancybox-p Санкт-Петербург, Сапёрный пер., дом 5
+
+				.main-form--tea Печеньки и горячий чай<br />для всех наших гостей
+		
+		.main-faq: .container
+			.main-faq--title Вопросы и ответы
+
+			.main-faq--in.clearfix
+				.main-faq--box.left
+					.main-faq--nav.fixedScroll: ul.main-faq--nav-list
+						li.main-faq--nav-item: a(href="#faq-i1").main-faq--nav-link.scrollTo Документы и приём
+
+						li.main-faq--nav-item: a(href="#faq-i2").main-faq--nav-link.scrollTo Формат обучения
+
+						li.main-faq--nav-item: a(href="#faq-i3").main-faq--nav-link.scrollTo Качество и гарантии
+
+						li.main-faq--nav-item: a(href="#faq-i4").main-faq--nav-link.scrollTo Расписание и график
+
+						li.main-faq--nav-item: a(href="#faq-i5").main-faq--nav-link.scrollTo Финансы и скидки
+
+						li.main-faq--nav-item: a(href="#faq-i6").main-faq--nav-link.scrollTo Помощь с поступлением в ВУЗ
+
+				.main-faq--info.right
+					#faq-i1.main-faq--item
+						.main-faq--item-title Проводите ли вы пробные ЕГЭ и ОГЭ(ГИА)?
+						.main-faq--item-text Пробные ЕГЭ/ОГЭ проводятся минимум два раза в течение курса обучения по предмету. Тестирования проводятся на бланках, идентичных настоящим, проверка письменной части осуществляется экспертами ЕГЭ/ОГЭ (ГИА). Проверка проводится в течение 7 дней с момента написания тестирования.
+
+					#faq-i2.main-faq--item
+						.main-faq--item-title Как часто проводятся занятия?
+						.main-faq--item-text По одному предмету занятия проходят один раз в неделю, в вечернее время. Время начала занятий 16:30 – 17:00 или 18:30-19:00. Длительность одного занятия 120 минут. Расписание занятий можно уточнить по телефону +7 (812) 648-00-66.
+
+					#faq-i3.main-faq--item
+						.main-faq--item-title Есть ли вводное тестирование?
+						.main-faq--item-text Перед началом занятий, для определения уровня базовой подготовки проводится вводное тестирование. По результату тестирования мы сможем подобрать группу оптимально подходящую ученику.
+
+					#faq-i4.main-faq--item
+						.main-faq--item-title Сколько месяцев длятся курсы?
+						.main-faq--item-text Стандартная продолжительность курсов с сентября по май: – девятимесячные курсы и с января по май – пятимесячные курсы.
+
+					#faq-i5.main-faq--item
+						.main-faq--item-title Как проходит обучение?
+						.main-faq--item-text Наш Центр занимается целенаправленной подготовкой школьников 9-11 классов к ЕГЭ и ОГЭ(ГИА) с учетом специфики этих экзаменов. Выпускники поступают в различные вузы Санкт-Петербурга и Москвы — от самых простых до СПБГУ и МГУ им. М.В.Ломоносова.<br />Подготовка ведется по программам, составленным в соответствии с современными государственными образовательными стандартами, с использованием тренировочных тестирований, разработанных ФИПИ.<br />Для средних и сильных групп по всем предметам предусмотрена отработка заданий части С. Часть курса отведена на выработку навыков, необходимых для успешного выполнения тестовых заданий ЕГЭ/ОГЭ (ГИА).<br />В программу также входит блок «технология и тактика выполнения заданий ЕГЭ/ОГЭ(ГИА)». Ввиду малочисленности групп формат занятий близок к индивидуальным, что позволяет преподавателю в достаточном объеме уделить внимание каждому ученику.
+
+					#faq-i6.main-faq--item
+						.main-faq--item-title Какие документы необходимы для заключения договора?
+						.main-faq--item-text Необходим паспорт родителя (законного представителя), если обучаемому еще нет 18 лет и паспорт обучаемого.
+
+					#faq-i7.main-faq--item
+						.main-faq--item-title Какой график работы?
+						.main-faq--item-text Мы работаем ежедневно с 10:00 до 21:00.
+
+					#faq-i8.main-faq--item
+						.main-faq--item-title Количество человек в группе?
+						.main-faq--item-text От 6 до 10 человек.
+
+					#faq-i9.main-faq--item
+						.main-faq--item-title Есть ли у вас лицензия?
+						.main-faq--item-text Согласно п.п. 12 и 19 Порядок организации и осуществления образовательной деятельности по дополнительным профессиональным программам, утв. Приказом Минобрнауки России от 01.07.2013 N 499, лицензия не требуется.
+
+					#faq-i10.main-faq--item
+						.main-faq--item-title Есть ли у вас льготы?
+						.main-faq--item-text Мы предоставляем специальные скидки детям из многодетных семей и детям-сиротам.
+
+					#faq-i11.main-faq--item
+						.main-faq--item-title Какие у вас есть скидки?
+						.main-faq--item-text Мы предоставляем скидку 10% при единовременной оплате полного курса. Также при заключении договора на 3 и более предметов мы предоставляем специальную цену.
+
+					#faq-i12.main-faq--item
+						.main-faq--item-title Имеете ли вы отношение к курсам вузов Санкт-Петербурга?
+						.main-faq--item-text Нет, мы не являемся курсами от какого-то конкретного вуза, но у нас работают преподаватели ведущих вузов Санкт-Петербурга
+
+					#faq-i13.main-faq--item
+						.main-faq--item-title Как быть с пропущенными по вине ученика занятиями? Переносится ли оплата?
+						.main-faq--item-text Перенос оплаты возможен только в случае пропуска по уважительной причине, подтвержденной документально (медицинская справка, больничный лист). Но наши педагоги с удовольствием предоставят все необходимые материалы по пропущенным темам, чтобы ученик мог догнать группу.
+
+					#faq-i14.main-faq--item
+						.main-faq--item-title Задаете ли вы домашние задания?
+						.main-faq--item-text Да, в конце каждого занятия ученики получают домашнее задание. Выполнение домашнего задания является строго обязательным.
+
+					#faq-i15.main-faq--item
+						.main-faq--item-title Пишут ли ученики контрольные работы?
+						.main-faq--item-text Помимо пробных ЕГЭ/ОГЭ(ГИА), в рамках занятий ученики регулярно пишут контрольные по каждой пройденной теме.
+
+		footer.footer.fixedScroll__redline: .container.clearfix
+			.footer--column.c1.left © 2015-16 ЕГЭ Центр<br />ООО "Диалог Культур"<br />ОГРН 1089847207273<br />ИНН 7841387951<br />
+				a(href="#terms").fancybox Пользовательское соглашение
+
+			.footer--column.c2.left
+				span.footer--phone 8 812 648-00-66
+				| Саперный переулок дом 5<br />
+				a(href="#map").fancybox-p посмотреть на карте
+
+			.footer--column.c3.left Делимся опытом и секретами в рассылке
+				.footer--form.clearfix
+					input(type="text" placeholder="Электронная почта").footer--form-input
+					button(type="submit").footer--form-submit Подписаться
+
+		#call.popup.call
+			form(action="" method="POST").ajax-form.main-form--box.inPopup
+				.main-form--process
+					.main-form--field.clearfix.m1
+						label.main-form--field-label Ваше имя
+						input(type="text" name="fullName").main-form--field-input.i1
+
+					.main-form--field.clearfix.m1
+						label.main-form--field-label Телефон
+						input(type="text" name="phoneNumber" placeholder="+7 (999) 999-99-99").main-form--field-input.phoneMask.i2
+
+					input(type="hidden" name="specialField_1" value="0")
+					input(type="hidden" name="specialField_2" value="1")
+
+					button(type="submit").main-form--submit Забронировать
+
+				.main-form--success Спасибо!<br />Мы свяжемся с вами в&nbsp;течение 30 минут.
+
+		#map.popup.map
+			script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=gtn0kk_H6jnacfxRa_CIzZSCTEcw_YPX&width=600&height=450&lang=ru_RU&sourceType=constructor")
+
+		#terms.popup.terms
+			p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar malesuada nisl, iaculis imperdiet libero lobortis eu. Duis ac suscipit nulla. Aliquam in malesuada massa. Fusce eleifend ligula diam, vitae gravida mauris pulvinar vel. Mauris sit amet pharetra risus, non sollicitudin purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eu enim nec ipsum tempus eleifend at euismod est. Curabitur efficitur turpis nec magna pellentesque consectetur. Nullam congue est at magna varius interdum. In pulvinar, ipsum vitae lobortis varius, ante dui sagittis massa, ac porta est orci et diam. Fusce nec luctus neque. Suspendisse dignissim malesuada vehicula. Curabitur venenatis nisl consequat, molestie eros sed, elementum purus. Cras ipsum erat, finibus sit amet mauris eget, eleifend ornare nisl. Donec tristique arcu est, sed molestie nibh condimentum sit amet. Suspendisse ornare dolor diam, et laoreet ante venenatis id.
+			
+			p Nunc quam orci, volutpat non massa eget, lobortis convallis justo. Praesent scelerisque varius odio at maximus. Fusce et mauris fermentum, aliquet nisi dictum, lacinia lacus. Vivamus venenatis fermentum ante, non malesuada mauris dignissim iaculis. Ut sodales mauris sem. Quisque ut euismod massa. Nulla convallis est diam, a tincidunt nibh varius vitae. Cras in tellus justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vel interdum leo. Nunc eget turpis sit amet mi porttitor scelerisque. Donec at condimentum ligula, sit amet dignissim neque.
+			
+			p Fusce consectetur malesuada eleifend. Ut maximus elementum velit id varius. Aliquam nec risus nibh. Praesent eu elit cursus justo tempor tincidunt ac eget orci. Proin at dapibus massa. Proin scelerisque leo eget massa sagittis fermentum. Sed porttitor dapibus magna, id tincidunt risus ullamcorper eget. Donec maximus ultricies ipsum, a ullamcorper urna facilisis ornare. Nullam sollicitudin sollicitudin orci, at tempor est varius non. Quisque id leo orci. Vivamus et ultricies tellus, ac sagittis nisl. Nullam ante est, finibus nec urna et, eleifend maximus nisi. Curabitur id mattis risus. Donec eget nulla volutpat, convallis urna accumsan, eleifend purus.
+			
+			p Nunc quam orci, volutpat non massa eget, lobortis convallis justo. Praesent scelerisque varius odio at maximus. Fusce et mauris fermentum, aliquet nisi dictum, lacinia lacus. Vivamus venenatis fermentum ante, non malesuada mauris dignissim iaculis. Ut sodales mauris sem. Quisque ut euismod massa. Nulla convallis est diam, a tincidunt nibh varius vitae. Cras in tellus justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vel interdum leo. Nunc eget turpis sit amet mi porttitor scelerisque. Donec at condimentum ligula, sit amet dignissim neque.
+			
+			p Fusce consectetur malesuada eleifend. Ut maximus elementum velit id varius. Aliquam nec risus nibh. Praesent eu elit cursus justo tempor tincidunt ac eget orci. Proin at dapibus massa. Proin scelerisque leo eget massa sagittis fermentum. Sed porttitor dapibus magna, id tincidunt risus ullamcorper eget. Donec maximus ultricies ipsum, a ullamcorper urna facilisis ornare. Nullam sollicitudin sollicitudin orci, at tempor est varius non. Quisque id leo orci. Vivamus et ultricies tellus, ac sagittis nisl. Nullam ante est, finibus nec urna et, eleifend maximus nisi. Curabitur id mattis risus. Donec eget nulla volutpat, convallis urna accumsan, eleifend purus.
+			
+			p Nunc quam orci, volutpat non massa eget, lobortis convallis justo. Praesent scelerisque varius odio at maximus. Fusce et mauris fermentum, aliquet nisi dictum, lacinia lacus. Vivamus venenatis fermentum ante, non malesuada mauris dignissim iaculis. Ut sodales mauris sem. Quisque ut euismod massa. Nulla convallis est diam, a tincidunt nibh varius vitae. Cras in tellus justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis vel interdum leo. Nunc eget turpis sit amet mi porttitor scelerisque. Donec at condimentum ligula, sit amet dignissim neque.
+			
+			p Fusce consectetur malesuada eleifend. Ut maximus elementum velit id varius. Aliquam nec risus nibh. Praesent eu elit cursus justo tempor tincidunt ac eget orci. Proin at dapibus massa. Proin scelerisque leo eget massa sagittis fermentum. Sed porttitor dapibus magna, id tincidunt risus ullamcorper eget. Donec maximus ultricies ipsum, a ullamcorper urna facilisis ornare. Nullam sollicitudin sollicitudin orci, at tempor est varius non. Quisque id leo orci. Vivamus et ultricies tellus, ac sagittis nisl. Nullam ante est, finibus nec urna et, eleifend maximus nisi. Curabitur id mattis risus. Donec eget nulla volutpat, convallis urna accumsan, eleifend purus.
+			
+			p Nulla finibus nisi pretium odio viverra egestas. Quisque leo velit, porttitor a suscipit id, blandit vitae magna. Phasellus est mi, viverra at nibh id, porttitor semper lorem. Sed finibus ut risus condimentum rhoncus. Suspendisse a magna fermentum tellus volutpat porttitor id id velit. Vivamus et elit eu elit ornare mattis sit amet non dui. Vivamus sollicitudin nulla quis mauris aliquam egestas non vitae justo. Aenean sed vehicula nulla, vel finibus dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean libero dui, auctor id tempus dictum, cursus varius eros.
+			
+			p Ut consequat ligula vitae faucibus egestas. Etiam porta, elit vel vestibulum hendrerit, nisl ante luctus metus, a ornare dui purus sed ipsum. Pellentesque id sollicitudin ligula, at pulvinar lorem. Fusce id lorem massa. Pellentesque nunc ante, fermentum eu facilisis quis, condimentum vel nibh. Proin pharetra, risus et tempus pharetra, enim nunc elementum ante, eu volutpat felis purus ut massa. Suspendisse non leo in neque lobortis tempus.
