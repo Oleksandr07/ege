@@ -297,6 +297,37 @@ $(document).ready(function () {
 			total.text(result + ' ₽')
 	});
 
+
+	$('.airSticky').airStickyBlock({
+	    debug: false, // Режим отладки, по умолчанию false
+	    stopBlock: '.airSticky-stop' // Класса контейнера, в котором находится сетка, по умолчанию .airSticky_stop-block
+	});
+
+	function services(){
+
+		$('.services-sidebar li').on('click',function(){
+			$('html,body').animate({scrollTop:$('.services-box[data-title="' + $(this).attr('data-title') + '"]').offset().top-20},800);
+			/*$('.services-sidebar li').removeClass('active');
+			$(this).addClass('active');*/
+			return false;
+		});
+
+		/*$(window).scroll(function(event) {
+			$('.services-box').each(function() {
+				if (top > $(this).offset().top) {
+					$('.services-sidebar li[data-title="' + $(this).attr('data-title') + '"]');
+				}
+			});
+		});*/
+
+	};
+	services();
+
+	$('.reclame-close').click(function(event) {
+		$(this).parents('.reclame').animate({'right': '-1000px'}, 500);
+	});
+	
+
 });
 
 
